@@ -1,0 +1,12 @@
+body,header,footer,nav,section,article,aside,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,li,table,address,tbody,dl,dt,dd,form,fieldset,input,select,option,textarea,button,blockquote{   margin:0px;  padding:0px;  box-sizing:border-box;   }
+ul,ol{   list-style:none;    }
+a{    text-decoration:none;    }
+h1,h2,h3,h4,h5,h6{  font-size:100%;  font-weight:normal;  }
+strong,b{  font-weight:normal;  }
+em,i,address{   font-style:normal;   }
+table{ border-collapse:collapse; border-spacing:0px;   }
+caption,legend,hr{   display:none;   }
+img,fieldset{  border:0px none;   }
+img{  display:block;  margin:0px;  padding:0px;   }
+q::before,q::after{  content:"";  }
+textarea{  resize:none;  }
