@@ -7,6 +7,7 @@ html,
 body {
   font-family: 'Roboto', 'Noto Serif', sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .sr_only {
@@ -40,7 +41,12 @@ header>.innerbox {
   align-items: center;
 }
 
-header img{  max-width:100px; max-height: 40px;  display : inline; }
+header img {
+  max-width: 100px;
+  max-height: 40px;
+  display: inline;
+}
+
 header>.innerbox>h1 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -85,7 +91,8 @@ header.fix>.innerbox>h1>a {
 header.fix>.innerbox>.toggle>span {
   background-color: #090909;
 }
-header.fix>.innerbox>.gnb>ul>li>a::before{
+
+header.fix>.innerbox>.gnb>ul>li>a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,7 +107,8 @@ header.fix>.innerbox>.gnb>ul>li>a::before{
   opacity: 0;
   transition: all .3s
 }
-header.fix>.innerbox>.gnb>ul>li>a:hover::before{
+
+header.fix>.innerbox>.gnb>ul>li>a:hover::before {
   opacity: 1;
   background-color: #999999;
   -webkit-transform: scaleX(1);
@@ -133,7 +141,7 @@ header>.innerbox>.gnb a {
   line-height: 1.7rem;
 }
 
-header>.innerbox>.gnb>ul>li>a::before{
+header>.innerbox>.gnb>ul>li>a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -148,16 +156,18 @@ header>.innerbox>.gnb>ul>li>a::before{
   opacity: 0;
   transition: all .3s
 }
-header>.innerbox>.gnb>ul>li>a:hover{
-  color:#212e47;  
+
+header>.innerbox>.gnb>ul>li>a:hover {
+  color: #212e47;
 }
-header>.innerbox>.gnb>ul>li>a:hover::before{
+
+header>.innerbox>.gnb>ul>li>a:hover::before {
   opacity: 1;
-background-color: #fff;
--webkit-transform: scaleY(1);
-transform: scaleY(1);
-transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
-transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+  background-color: #fff;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+  transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
 }
 
 header>.innerbox>.gnb .sub {
@@ -166,17 +176,20 @@ header>.innerbox>.gnb .sub {
   padding-left: 20px;
   display: none;
 }
-header > .innerbox > .gnb .sub a {
+
+header>.innerbox>.gnb .sub a {
   position: relative;
-  display: inline-block; /* 글자 너비만큼 요소의 크기를 제한 */
+  display: inline-block;
+  /* 글자 너비만큼 요소의 크기를 제한 */
 }
 
-header > .innerbox > .gnb .sub a::before {
+header>.innerbox>.gnb .sub a::before {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; /* 글자 너비에 맞게 크기 설정 */
+  width: 100%;
+  /* 글자 너비에 맞게 크기 설정 */
   height: 1px;
   background: #6098FF;
   display: block;
@@ -185,7 +198,7 @@ header > .innerbox > .gnb .sub a::before {
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
 }
 
-header > .innerbox > .gnb .sub a:hover::before {
+header>.innerbox>.gnb .sub a:hover::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
@@ -227,10 +240,7 @@ header>.innerbox>.icons_top {
   display: none;
 }
 
-#slide_container .swiper .swiper-button-next,
-#slide_container .swiper .swiper-button-prev {
-  display: block;
-}
+
 
 #slide_container #p1,
 #slide_container #n1 {
@@ -356,14 +366,17 @@ header>.innerbox>.icons_top {
   /* transform:translateY(-45%); */
   margin-top: -10%;
 }
-#featured_room>.ocean>.imgs_wrap{
+
+#featured_room>.ocean>.imgs_wrap {
   position: relative;
 }
-#featured_room>.ocean>.imgs_wrap>.room5{
+
+#featured_room>.ocean>.imgs_wrap>.room5 {
   width: 60%;
   height: auto;
 }
-#featured_room>.ocean>.imgs_wrap>.room6{
+
+#featured_room>.ocean>.imgs_wrap>.room6 {
   width: 56%;
   height: auto;
   position: absolute;
@@ -615,133 +628,20 @@ header>.innerbox>.icons_top {
   bottom: 50%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 80px !important;
-  height: 80px;
-  background-image: none !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  bottom: 0;
-  margin: 0;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
 
-.swiper-button-prev {
-  left: 0px !important;
-  right: auto !important;
-  background-color: rgba(255, 255, 255, 0.7);
-}
 
-.swiper-button-next {
-  right: 0px !important;
-  background-color: rgba(255, 255, 255, 0.8);
-}
 
-.swiper-button-prev span,
-.swiper-button-next span {
-  width: 10px;
-  height: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  position: absolute;
-  border: solid 2px #666;
-  border-left: 0;
-  border-bottom: 0;
-  transition: all 0.1s ease;
-}
 
-.swiper-button-prev span {
-  transform: rotate(-135deg);
-  left: 49%;
-}
 
-.swiper-button-next span {
-  transform: rotate(45deg);
-  right: 49%;
-}
-
-.swiper-button-prev:hover span,
-.swiper-button-next:hover span {
-  width: 5px;
-  height: 5px;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  width: 0px;
-  height: inherit;
-  content: "";
-  position: absolute;
-  border-radius: 5px;
-  background-color: white;
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-  opacity: 0.8;
-}
-
-.swiper-button-prev:after {
-  right: 0;
-}
-
-.swiper-button-next:after {
-  left: 0;
-}
-
-.swiper-button-prev:hover:after,
-.swiper-button-next:hover:after {
-  width: inherit;
-}
-
-.swiper-button-disabled {
-  opacity: 1 !important;
-}
-
-.swiper-button-disabled.swiper-button-prev span,
-.swiper-button-disabled.swiper-button-next span {
-  opacity: 0.2;
-}
 
 @media screen and (max-width: 512px) {
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 60px;
-    height: 60px;
-    bottom: 0;
-  }
+ 
 
-  .swiper-arrows {
-    height: 60px;
-  }
 
-  .swiper-button-prev {
-    right: 60px;
-  }
-
-  .swiper-button-prev span {
-    left: 45%;
-  }
-
-  .swiper-button-next span {
-    right: 45%;
-  }
 }
 
-.swiper-button-next::after,
-.swiper-container-rtl .swiper-button-prev::after {
-  content: "attr" !important;
-}
 
-.swiper-button-prev::after,
-.swiper-container-rtl .swiper-button-prev::after {
-  content: "attr" !important;
-}
 
 .introcontainer>h2 {
   font-size: 2.6rem;
@@ -764,19 +664,25 @@ header>.innerbox>.icons_top {
 }
 
 /*예약 & 이용안내 섹션*/
-.reser{     font-size: 2.6rem;
+.reser {
+  font-size: 2.6rem;
   margin-bottom: 2.8rem;
   text-align: center;
   color: #090909;
   font-family: 'Noto Serif';
   padding-bottom: 20px;
-margin-top: 2em;}
-.reser::after{content: "";
+  margin-top: 2em;
+}
+
+.reser::after {
+  content: "";
   display: block;
   width: 50px;
   height: 1px;
   background: #090909;
-  margin: 20px auto 0;}
+  margin: 20px auto 0;
+}
+
 .resr_b ul {
   display: flex;
   justify-content: space-between
@@ -1352,7 +1258,7 @@ footer>.footer_bottom>.copyright {
     justify-content: space-between;
     align-items: center;
   }
-  
+
 }
 
 @media screen and (min-width:1200px) {
@@ -1390,7 +1296,7 @@ footer>.footer_bottom>.copyright {
 
   header>.innerbox>.gnb>ul>li>.sub {
     width: 200px;
-    height: 120px;
+    height: auto;
     background-color: #fff;
     padding-top: 10px;
     position: absolute;
@@ -1414,7 +1320,7 @@ footer>.footer_bottom>.copyright {
 
   header>.innerbox>.gnb>ul>li:nth-child(4)>.sub {
     width: 200px;
-    height: 70px;
+    height: auto;
     background-color: #fff;
     padding-top: 10px;
     position: absolute;

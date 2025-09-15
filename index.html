@@ -7,9 +7,10 @@
   <meta name="format-detection" content="telephone=no, address=no, email=no">
   <title>Normandie Hotel</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
   <link rel="icon" href="images/favicon.ico">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -42,17 +43,6 @@
                 <li><a href="#">중식</a></li>
                 <li><a href="#">양식</a></li>
                 <li><a href="#">베이커리</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#service">서비스</a>
-            <div class="sub">
-              <ul>
-                <li><a href="#">라운지</a></li>
-                <li><a href="#">사우나</a></li>
-                <li><a href="#">헬스 센터</a></li>
-                <li><a href="#">세탁 &amp; 대여</a></li>
               </ul>
             </div>
           </li>
@@ -113,10 +103,6 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <div class="swiper-arrows">
-        <div class="swiper-button-prev"><span id="p1"></span></div>
-        <div class="swiper-button-next"><span id="n1"></span></div>
-      </div>
     </div>
   </section>
 
@@ -194,66 +180,7 @@
     </div>
   </section>
 
-  <div class="introcontainer" id="service">
-    <h2>서비스</h2>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card ong">
-              <img src="images/raunge.png" alt="라운지" />
-              <div class="title-box">
-                <h3>라운지 (Lounge)</h3>
-                <p>"여유와 품격이 공존하는 공간에서 일상의 피로를 풀어보세요. 고급스러운 분위기와 함께하는 라운지는 여러분에게 편안한 휴식과 특별한 시간을 선사합니다. 정성껏 준비한 다양한 음료와 스낵을 즐기며 휴식의 참된 의미를 느껴보세요."</p>
-                <div class="seperator"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card two">
-              <img src="images/Pool.png" alt="온수풀" />
-              <div class="title-box">
-                <h3>온수풀 (Heated Pool)</h3>
-                <p>"따뜻한 물속에서 느끼는 완벽한 휴식. 사계절 내내 최적의 온도를 유지하는 온수풀에서 일상의 피로를 녹여보세요. 넓고 편안한 공간에서 수영을 즐기거나, 부드러운 물살에 몸을 맡기며 여유로운 시간을 만끽하세요. 아름다운 경관과 함께, 온수풀은 고객님께 최상의 휴식을 선사합니다."</p>
-                <div class="seperator"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card three">
-              <img src="images/health.jpg" alt="헬스장" />
-              <div class="title-box">
-                <h3>헬스센터 (Fitness Center)</h3>
-                <p>"건강한 하루를 위한 최고의 선택. 최신식 피트니스 장비와 쾌적한 운동 환경을 갖춘 헬스센터는 체력 증진과 건강 관리를 위해 최적화된 공간입니다. 전문 트레이너의 조언과 함께 활기찬 운동으로 하루를 시작하세요."</p>
-                <div class="seperator"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="cards">
-            <div class="card four">
-              <img src="images/setak.jpg" alt="세탁" />
-              <div class="title-box">
-                <h3>세탁 &amp; 대여 (Laundry &amp; Rental Services)</h3>
-                <p>"완벽한 편의를 제공하는 세탁 및 대여 서비스. 고객님의 소중한 시간을 아껴드리기 위해 호텔 내에서 세탁과 다양한 물품 대여 서비스를 제공합니다. 언제나 깔끔하고 편안한 스타일을 유지할 수 있도록, 빠르고 믿을 수 있는 서비스를 경험해 보세요."</p>
-                <div class="seperator"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-arrows">
-        <div class="swiper-button-prev"><span></span></div>
-        <div class="swiper-button-next"><span></span></div>
-      </div>
-    </div>
-  </div>
+  
 
   <h2 class="reser" id="reser">예약</h2>
   <div class="resr_b">
@@ -323,7 +250,7 @@
     </div>
     <div class="footer_bottom">
       <p>상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
-      <p class="copyright">&copy; 2024 Jun Sung Ill. All Rights Reserved.</p>
+      <p class="copyright">&copy; 2025 Jun Sung Ill. All Rights Reserved.</p>
     </div>
   </footer>
 
